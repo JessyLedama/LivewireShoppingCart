@@ -21,7 +21,6 @@ class ProductController extends Controller
         return view('cart');
     }
 
-    // Add items to cart
     public function addToCart(Request $request)
     {
         \Cart::add([

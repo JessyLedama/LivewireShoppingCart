@@ -15,13 +15,11 @@ class ProductController extends Controller
         return view('products', compact('products'));
     }
 
-    // Show cart
     public function cartList()
     {
         return view('cart');
     }
 
-    // Add items to cart
     public function addToCart(Request $request)
     {
         \Cart::add([
